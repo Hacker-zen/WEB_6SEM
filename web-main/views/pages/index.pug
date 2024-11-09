@@ -1,0 +1,105 @@
+extends ../components/layouts/main.pug
+
+block append head
+    title Israt Market 
+    script(src='scripts/script.js')
+    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+    script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+    link(rel='stylesheet' href='./css/swiper.css')
+
+block content
+    hr
+    main
+      .box
+        section.main-page
+          block pageload 
+            include ../components/payloadTime/payloadTime.pug
+          .swiper-container
+            .swiper-wrapper
+              each product in products
+                .swiper-slide
+                  div(class=`product-${product.id}`)
+                    img(src=`pics/${product.image}`, alt=product.alt)
+                    p.product-title #{product.title}
+                    p.price #{product.price}p
+                    button.button-23(role='button') Купить
+            .swiper-pagination
+            .swiper-button-next
+            .swiper-button-prev
+            .swiper-scrollbar
+          //- Remaining articles for other product categories
+          each category in categories
+            br
+            article(id=category.id)
+              h3.article-title= category.title
+              each product in category.products
+                .product
+                  img(src=`pics/${product.image}`, alt=product.alt)
+                  p.product-title #{product.title}
+                  p.price #{product.price}p
+                  button.button-23(role='button') Купить
+          br
+          aside
+            h3 Цитаты дня
+            ol
+              each quote in quotes
+                li
+                  blockquote
+                    p= quote.text
+                    cite= quote.author
+        .grid-container
+          .grid-header
+            h4 Лабораторная работа №1
+          .grid-header
+            h4 Лабораторная работа №2
+          .grid-header
+            h4 Лабораторная работа №3
+          .grid-header
+            h4 Лабораторная работа №4
+          .grid-row
+            .grid-item
+              p Средства гипертекстовой разметки документа
+            .grid-item
+              p Сдано
+            .grid-item
+              p Test
+          .grid-row
+            .grid-item
+              p Применение каскадных таблиц стиля
+            .grid-item
+              p Сдано
+            .grid-item
+              p Test
+          .grid-row
+            .grid-item
+              p Адаптивная вёрстка макета сайта
+            .grid-item
+              p Сдано
+            .grid-item
+              p Test
+          .grid-row
+            .grid-item
+              p Добавление пользовательского интерактивного взаимодействия
+            .grid-item
+              p Сдаю
+            .grid-item
+              p Test
+        
+        script.
+          // Initialize Swiper
+          var swiper = new Swiper('.swiper-container', {
+          //  Swiper configuration options here
+          slidesPerView: 1,
+          spaceBetween: 5,
+          navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          },
+          scrollbar: {
+          el: '.swiper-scrollbar',
+          },
+          });

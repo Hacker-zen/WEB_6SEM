@@ -1,0 +1,29 @@
+- var is_authorised = false // view of user authorization in header depend on this variable
+
+.navbar
+  img#logo(src='pics/logo.png' alt='logo')
+.navbar
+  ul
+    li.navchoice
+      a(href='/index') Главная
+    li.navchoice
+      a(href='/category') Категории
+    li.navchoice
+      a(href='/about') О нас
+    li.navchoice
+      a(href='/buyList') Список покупки
+
+#user 
+  if is_authorised 
+    //- it means user logged in => show profile button
+    #profile-picture(onclick='openProfilePage()')
+      img(src='pics/profile.jpeg' alt='profile')
+    button(type='submit') logout
+  else
+    //- it means user have not logged yet => show login form
+    .login_form
+      .input_enter
+        input(type='text', placeholder='Enter Username', name='uname', required='')
+        input(type='password', placeholder='Enter Password', name='psw', required='')
+      button(type='submit') Login
+    a.signUp-text(href='/signUp') signUp 
