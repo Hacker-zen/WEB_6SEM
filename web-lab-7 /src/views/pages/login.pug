@@ -1,0 +1,18 @@
+extends ../components/layouts/main.pug
+
+block append head
+    title Login
+    link(rel='stylesheet' href='./css/login.css')
+
+block content
+    hr
+    main
+        .container
+            h1 LOGIN
+            form
+                label(for='email') Email:
+                input#email(type='email', name='email', required='')
+                label(for='password') Password
+                input#password(type='password', name='password', required='')
+                button(type='submit') Login
+        script(src='scripts/auth/login.js')

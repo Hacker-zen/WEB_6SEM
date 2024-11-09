@@ -1,0 +1,25 @@
+extends ../components/layouts/main.pug
+
+block append head
+    title sign up
+    link(rel='stylesheet' href='./css/signup.css')
+
+block content
+    hr
+    main
+        h1 Sign Up
+            form#register-form
+                label(for='email') Email:
+                input#email(type='email', name='email', required='')
+                br
+                label(for='password') Password:
+                input#password(type='password', name='password', required='')
+                br
+                label(for='fullName') Full name:
+                input#fullName(type='text', name='fullName', required='')
+                br
+                label(for='phoneNumber') Phone number:
+                input#phoneNumber(type='tel', name='phoneNumber',  required='')
+                br
+                button(type='submit') Submit
+    script(src='scripts/auth/signup.js')
