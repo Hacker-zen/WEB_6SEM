@@ -1,0 +1,19 @@
+extends ../components/layouts/main.pug
+
+block append head
+    title Categories
+
+block content
+    hr
+    .category-page
+        section.category-list
+            block pageload 
+                include ../components/payloadTime/payloadTime.pug
+            h2 Категории товаров
+            ul
+                li
+                    a(href='/index#smartphone') Смартфоны
+                li
+                    a(href='/index#book') Книги
+                li
+                    a(href='/index#tablet') Планшеты
