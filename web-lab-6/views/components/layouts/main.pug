@@ -1,0 +1,16 @@
+doctype html
+head
+  block head
+    meta(charset='UTF-8')
+    meta(name='keywords' content='Купить, продать, технология')
+    meta(name='description' content='Интернет магазин России')
+    link(rel='stylesheet' href='css/index.css')
+
+body 
+    block  header 
+        include ../header/header.pug
+    block content 
+    block footer
+        include ../footer/footer.pug
+script(type='text/javascript' src='scripts/script.js')
+script(type='text/javascript' src='scripts/logout.js')
