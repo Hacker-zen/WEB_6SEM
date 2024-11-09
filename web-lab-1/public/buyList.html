@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="css/index.css">
+          <title>About</title>
+          <script src="scripts/script.js"></script>
+     </head>
+<body>
+     <header>
+          <div class="navbar">
+              <img id="logo" src="pics/logo.png" alt="logo">
+          </div>
+          <div class="navbar">
+              <ul>
+                  <li class="navchoice"><a href="index.html">Главная</a></li>
+                  <li class="navchoice"><a href="category.html">Категории</a></li>
+                  <li class="navchoice"><a href="about.html">О нас</a></li>
+                  <li class="navchoice"><a href="buyList.html">Список покупки</a></li>
+              </ul>
+          </div>
+          <div id="profile-picture" onclick="openProfilePage()">
+              <img src="pics/profile.jpeg" alt="profile">
+          </div>
+      </header>
+      <hr/>
+      <main>
+          <section class="buyList-section">
+               <p id="pageLoad"> asdasdas</p>
+               <h2>Что вам нужно купить?</h2>
+               <br><br>
+               <form id="buyListForm" action="" >
+                    <label for="item">Я хочу купить: </label>
+                    <div class="form-input">
+                         <input type="text" id="itemInput" name="item" placeholder="Я хочу...">
+                         <button type="submit" id="itemSubmit">Submit</button>
+                    </div>
+               </form>
+               <br><br>
+               <h5>Ваш список</h5>
+               <br>
+               <ul id="buyList" class="buyList">
+                    
+               </ul>
+          </section>
+          <script src="scripts/buyList.js"></script>
+      </main>
+      <footer>
+          <p>&copy; 2023 Israt Market. Все права защищены.</p>
+      </footer>
+</body>
+</html>

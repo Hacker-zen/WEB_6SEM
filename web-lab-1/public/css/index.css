@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151515;
+    color: white;
+    text-decoration: none;
+    padding: 0.7em 1.4em;
+}
+
+header #logo {
+    width: 4.5em;
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 1.5em;
+}
+
+header ul li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.navchoice:hover a{
+    color: #e67c35;
+    font-size: 1.6em;;
+}
+
+
+.active{
+    color: #e67c35;
+    text-decoration: underline;
+}
+
+
+#profile-picture img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Main Styles */
+main {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-page{
+    padding: 2em;
+    font-family: 'Ubuntu';
+}
+
+.box {
+    width: 100%;
+}
+
+.main-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.category-list h2{
+    margin-top: 1em;
+    font-size: 2.5em;
+}
+
+.category-list li{
+    margin: 0.5em 0.5em;
+    list-style: none;
+    font-size: 2em;
+}
+
+.category-list li a{
+    color: black;
+    text-decoration: none;
+    padding: 0.2em;
+    margin: 0.2em;
+    border: 1px solid black;
+    border-radius: 0.1em;
+}
+
+.category-list li a:hover{
+    color: #e67c35;
+    background-color: rgb(201, 237, 255);
+    text-decoration: none;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1em;
+    font-family: 'Ubuntu';
+}
+
+.buyList-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    font-family: 'Ubuntu';
+}
+
+.buyList-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.buyList-section form input{
+    height: 3em;
+    width: 30em;
+    border: 1px solid #b6b6b6;
+    padding: 15px;
+    border-right:none;
+    border-radius: 5px 0 0px 5px;
+}
+
+.buyList-section form input:focus{
+    border: 1px solid #b6b6b6;
+    outline: none;
+}
+
+.buyList-section form button{
+    padding: 0px 20px;
+    border: 1px solid #b6b6b6;
+    font-size: 1.2em;
+    background-color: #c35a14;
+    color: white;
+    border-left:none;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.buyList-section form button:hover{
+    background-color: #e67c35;
+}
+
+.form-input{
+    display: flex;
+    flex: nowrap;
+}
+
+.buyList{
+    list-style-type: none;
+    padding: 1em 10em;
+    border: 1px solid #b6b6b6;
+}
+
+.buyList li{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #e67c35;
+}
+
+.buyList li span{
+    flex-grow: 1;
+}
+
+.buyList li button{
+    background-color: #ff6961;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 1.5em;
+    cursor: pointer;
+}
+
+
+
+.about-content img{
+    margin-bottom: 1em;
+}
+
+.about-content h2{
+    margin-top: 1em;
+}
+
+.about-content li{
+    list-style: none;
+}
+
+article {
+    width: 100%;
+    margin-bottom: 1.3em;
+    padding: 1.3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-title {
+    text-align: center;
+    font-size: 2em;
+    color: #e67c35;
+    width: 100%;
+    margin-bottom: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.product {
+    background-color: white;
+    padding: 1.5em;
+    width: 13em;
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Button Styles */
+.button-23 {
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+    outline: none;
+    padding: 5px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
+
+.button-23:hover {
+    border-color: #e67c35;
+    background-color: #e67c35;
+    color: white;
+}
+
+.button-23:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.button-23:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+.button-23:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 14em;
+}
+
+.product-title {
+    font-weight: 400;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.price {
+    color: #e67c35;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.logo{
+    width: 20%;
+    background-color: black;
+    padding: 1em;
+}
+
+/* Aside Styles */
+aside {
+    border-radius: 1em;
+    width: 80%;
+    padding: 1.5em;
+    background-color: white;
+}
+
+aside h3 {
+    text-align: center;
+    font-family: "Ubuntu";
+    color: #e67c35;
+}
+
+aside ol {
+    padding-top: 1.4em;
+    padding-left: 1.4em;
+}
+
+/* Blockquote Styles */
+blockquote {
+    font-style: italic;
+    margin-bottom: 0.7em;
+    word-spacing: 0.3em;
+    letter-spacing: 0.1em;
+}
+
+cite {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #151515;
+    color: rgb(139, 139, 139);
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid-header {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.grid-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: #fd3939;
+}
+.grid-item:nth-child(even) {
+    background-color: rgb(37, 169, 231);
+}
+
+.buy-item:nth-child(odd) .buy-item-name{
+    background-color: #e67c35;
+}
+.buy-item:nth-child(odd) button{
+    border: 1px solid #e67c35;
+    border-left: none;
+}
+
+.buy-item:nth-child(even) .buy-item-name{
+    border: 1px solid #e67c35;
+    border-right: none;
+}
+
+.buy-item:nth-child(even) button{
+    background-color: #e67c35;
+    border: none;
+}
+.buy-item:nth-child(even) button:hover{
+    background-color: rgb(188, 69, 69);
+}
+
+.buy-item:nth-child(even) .buy-item-count{
+    background-color: #e67c35;
+    border: none;
+}
+.buy-item:nth-child(odd) .buy-item-count{
+    border: 1px solid #e67c35;
+    border-right: none;
+}
+
+
+
+
+
+
+
+/* Small Screens */
+@media (max-width: 767px) {
+    header {
+        padding: 0.5em 1em;
+    }
+
+    header #logo {
+        width: 3em;
+    }
+
+    header ul li {
+        margin-right: 1em;
+    }
+
+    .button-23 {
+        font-size: 1em;
+        padding: 5px 15px;
+    }
+
+    .product {
+        width: 45%;
+        margin: 0.5em;
+    }
+
+    .grid-item{
+        height: 8em;
+    }
+}
+
+/* Middle Screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        padding: 0.6em 1.2em;
+    }
+
+    .button-23 {
+        font-size: 1.2em;
+        padding: 6px 18px;
+    }
+
+    .product {
+        width: 45%;
+        margin: 1em;
+    }
+
+    aside {
+        width: 90%;
+    }
+
+    .grid-item{
+        height: 6em;
+    }
+}
+
+/* Big Screens */
+@media (min-width: 992px) {
+    header {
+        padding: 0.7em 1.4em;
+    }
+
+    .button-23 {
+        font-size: 1.4em;
+        padding: 7px 23px;
+    }
+
+    .product {
+        width: 20%;
+        margin: 1em;
+    }
+
+    aside {
+        width: 80%;
+    }
+
+    .grid-item{
+        height: 3em;
+    }
+}
