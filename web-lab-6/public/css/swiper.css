@@ -1,0 +1,70 @@
+/* Swiper Styles */
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adjusted padding for better spacing */
+    background-color: #fff; /* Changed background color to white */
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px; /* Adjusted margin for less space between slides */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Added box shadow for a subtle lift */
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 13em; /* Set the maximum width based on your specified size */
+    height: auto;
+    border-radius: 0.8em; /* Applied border-radius from the product class */
+}
+
+.swiper-slide p {
+    margin-top: 10px;
+    font-size: 18px; /* Increased font size for better visibility */
+    color: #333;
+    text-align: center;
+}
+
+.swiper-slide .product-title {
+    font-weight: bold;
+}
+
+.swiper-slide .price {
+    color: #e44d26;
+    font-weight: bold;
+}
+
+.swiper-slide button {
+    margin-top: 10px;
+    padding: 10px 20px; /* Adjusted padding for better button size */
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Optional: Customize Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #e44d26;
+    font-size: 18px;
+}
+
+/* Optional: Customize Swiper Pagination */
+.swiper-pagination {
+    display: none;
+}
+
+/* Optional: Customize Swiper Scrollbar */
+.swiper-scrollbar {
+    display: none;
+}
